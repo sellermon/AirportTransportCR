@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
         <hr className="border-gray-700 my-8" />
         <div className="text-center text-gray-400">
-          <p data-testid="footer-copyright">© 2025 CYO. Todos los derechos reservados.</p>
+          <p data-testid="footer-copyright">© 2025 CYOS. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
