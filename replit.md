@@ -1,6 +1,18 @@
 # Overview
 
-This is a full-stack web application for a Costa Rican transportation service company called "TransporteCR". The application features a modern landing page showcasing airport transfers, corporate transportation, and private tours. Built with React on the frontend and Express.js on the backend, it uses a PostgreSQL database with Drizzle ORM for data management. The application is designed as a professional business website with contact functionality via WhatsApp integration.
+This is a full-stack web application for a Costa Rican transportation service company called "TransporteCR". The application features a modern single-page landing page showcasing airport transfers, corporate transportation, and private tours. Built with React on the frontend and Express.js on the backend, it uses a PostgreSQL database with Drizzle ORM for data management. The application is designed as a professional business website with contact functionality via WhatsApp integration.
+
+## Recent Changes (January 2025)
+
+The landing page has been redesigned to match the exact layout and styling from the provided reference image:
+
+- **Hero Section**: Updated with airport terminal background and improved text layout
+- **Services Section**: Three main services with custom icons (airport transfers, corporate transport, private tours)
+- **Geographic Coverage**: Costa Rica map visualization with location markers for San José, Alajuela, and Heredia
+- **Layout Optimization**: Testimonials and gallery positioned side-by-side for better space utilization
+- **Contact Section**: Simplified design with prominent WhatsApp number (+506 1234 5678) and 24/7 availability
+- **Color Scheme**: Applied consistent navy blue (#1e2238), red (#d63031), and gray branding
+- **Responsive Design**: Mobile-first approach matching the single-column layout from reference image
 
 # User Preferences
 

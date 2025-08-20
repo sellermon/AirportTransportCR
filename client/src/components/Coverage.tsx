@@ -17,18 +17,14 @@ export default function Coverage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Costa Rica Map */}
           <div className="relative" data-testid="costa-rica-map">
-            <div className="bg-brand-navy rounded-lg p-8 relative h-80 flex items-center justify-center">
-              <div className="text-white text-center">
-                <div className="relative w-64 h-48 mx-auto">
-                  <svg viewBox="0 0 300 200" className="w-full h-full fill-brand-blue stroke-white stroke-2">
-                    <path d="M50 100 L80 80 L120 85 L160 90 L200 95 L240 100 L250 120 L240 140 L200 145 L160 140 L120 135 L80 130 L50 120 Z" />
-                  </svg>
-                  {/* Location markers */}
-                  <div className="absolute top-16 left-20 w-3 h-3 bg-brand-red rounded-full animate-pulse" data-testid="location-marker-1"></div>
-                  <div className="absolute top-12 left-32 w-3 h-3 bg-brand-red rounded-full animate-pulse" data-testid="location-marker-2"></div>
-                  <div className="absolute top-20 left-28 w-3 h-3 bg-brand-red rounded-full animate-pulse" data-testid="location-marker-3"></div>
-                </div>
-              </div>
+            <div className="relative w-full max-w-sm mx-auto">
+              <svg viewBox="0 0 300 200" className="w-full h-auto fill-brand-navy">
+                <path d="M50 100 L80 80 L120 85 L160 90 L200 95 L240 100 L250 120 L240 140 L200 145 L160 140 L120 135 L80 130 L50 120 Z" />
+              </svg>
+              {/* Location markers */}
+              <div className="absolute top-16 left-20 w-3 h-3 bg-brand-red rounded-full" data-testid="location-marker-1"></div>
+              <div className="absolute top-12 left-32 w-3 h-3 bg-brand-red rounded-full" data-testid="location-marker-2"></div>
+              <div className="absolute top-20 left-28 w-3 h-3 bg-brand-red rounded-full" data-testid="location-marker-3"></div>
             </div>
           </div>
 
