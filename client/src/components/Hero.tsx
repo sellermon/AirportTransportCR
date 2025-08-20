@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.6), rgba(0, 30, 60, 0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.6), rgba(0, 30, 60, 0.6)), url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
       }}
       data-testid="hero-section"
     >
