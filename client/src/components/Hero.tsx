@@ -13,7 +13,7 @@ export default function Hero() {
     <section
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.4), rgba(0, 30, 60, 0.4)), url(${airportImage})`
+        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.5), rgba(0, 30, 60, 0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
       }}
       data-testid="hero-section"
     >
