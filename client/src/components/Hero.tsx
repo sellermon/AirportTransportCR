@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import airportImage from "@assets/Copilot_20250819_195513_1755656411568.png";
+import airportImage from "@assets/generated_images/Costa_Rica_glass_airport_terminal_212dbfab.png";
 
 export default function Hero() {
   const handleBookingRequest = () => {
@@ -13,7 +13,7 @@ export default function Hero() {
     <section
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.5), rgba(0, 30, 60, 0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+        backgroundImage: `linear-gradient(rgba(0, 30, 60, 0.5), rgba(0, 30, 60, 0.5)), url(${airportImage})`
       }}
       data-testid="hero-section"
     >
