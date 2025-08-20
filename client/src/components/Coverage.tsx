@@ -24,10 +24,13 @@ export default function Coverage() {
                 alt="Mapa de Costa Rica" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
-              {/* Location markers for major cities */}
-              <div className="absolute top-1/3 left-1/3 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
-              <div className="absolute top-1/4 left-2/5 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
-              <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
+              {/* Location markers positioned according to actual Costa Rica geography */}
+              {/* San José - Central Valley, center of the country */}
+              <div className="absolute top-[45%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
+              {/* Alajuela - Northwest of San José, near the airport */}
+              <div className="absolute top-[40%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
+              {/* Heredia - North of San José */}
+              <div className="absolute top-[38%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
             </div>
           </div>
 
