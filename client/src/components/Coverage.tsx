@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import costaRicaMap from "@assets/generated_images/Costa_Rica_detailed_country_map_a81c6d2f.png";
 
 export default function Coverage() {
   const locations = [
@@ -18,13 +19,15 @@ export default function Coverage() {
           {/* Costa Rica Map */}
           <div className="relative" data-testid="costa-rica-map">
             <div className="relative w-full max-w-xs mx-auto lg:mx-0">
-              <svg viewBox="0 0 300 200" className="w-full h-auto fill-brand-navy">
-                <path d="M50 100 L80 80 L120 85 L160 90 L200 95 L240 100 L250 120 L240 140 L200 145 L160 140 L120 135 L80 130 L50 120 Z" />
-              </svg>
-              {/* Location markers */}
-              <div className="absolute top-16 left-16 w-2 h-2 bg-brand-red rounded-full" data-testid="location-marker-1"></div>
-              <div className="absolute top-12 left-28 w-2 h-2 bg-brand-red rounded-full" data-testid="location-marker-2"></div>
-              <div className="absolute top-20 left-24 w-2 h-2 bg-brand-red rounded-full" data-testid="location-marker-3"></div>
+              <img 
+                src={costaRicaMap} 
+                alt="Mapa de Costa Rica" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              {/* Location markers for major cities */}
+              <div className="absolute top-1/3 left-1/3 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
+              <div className="absolute top-1/4 left-2/5 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
+              <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
             </div>
           </div>
 
