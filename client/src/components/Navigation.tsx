@@ -45,6 +45,13 @@ export default function Navigation() {
                 Testimonios
               </button>
               <button
+                onClick={() => scrollToSection('galeria')}
+                className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
+                data-testid="nav-galeria"
+              >
+                Galería
+              </button>
+              <button
                 onClick={() => scrollToSection('contacto')}
                 className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
                 data-testid="nav-contacto"
@@ -90,6 +97,13 @@ export default function Navigation() {
                 data-testid="mobile-nav-testimonios"
               >
                 Testimonios
+              </button>
+              <button
+                onClick={() => scrollToSection('galeria')}
+                className="block text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left"
+                data-testid="mobile-nav-galeria"
+              >
+                Galería
               </button>
               <button
                 onClick={() => scrollToSection('contacto')}

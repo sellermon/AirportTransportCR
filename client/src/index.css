@@ -51,10 +51,10 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Brand Colors */
-  --brand-navy: hsl(220 63% 21%);
+  /* Brand Colors - Based on Costa Rican Transport Image */
+  --brand-navy: hsl(222 47% 11%);
   --brand-blue: hsl(217 91% 60%);
-  --brand-red: hsl(0 84% 48%);
+  --brand-red: hsl(11 73% 48%);
   --brand-gray: hsl(215 16% 47%);
 }
 
