@@ -20,20 +20,20 @@ export default function Services() {
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-white" data-testid="services-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-brand-navy mb-16" data-testid="services-title">
+    <section id="servicios" className="py-12 bg-gray-50" data-testid="services-section">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center text-brand-navy mb-8" data-testid="services-title">
           Servicios
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div key={index} className="text-center group" data-testid={`service-card-${index}`}>
-                <div className="bg-brand-navy text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-blue transition-colors">
-                  <IconComponent className="w-8 h-8" />
+                <div className="bg-brand-navy text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-brand-blue transition-colors">
+                  <IconComponent className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-brand-navy mb-4" data-testid={`service-title-${index}`}>
+                <h3 className="text-base font-bold text-brand-navy leading-tight" data-testid={`service-title-${index}`}>
                   {service.title.split('\n').map((line, lineIndex) => (
                     <span key={lineIndex}>
                       {line}
@@ -41,9 +41,6 @@ export default function Services() {
                     </span>
                   ))}
                 </h3>
-                <p className="text-brand-gray leading-relaxed" data-testid={`service-description-${index}`}>
-                  {service.description}
-                </p>
               </div>
             );
           })}
