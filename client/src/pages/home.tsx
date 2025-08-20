@@ -4,7 +4,6 @@ import Services from "../components/Services";
 import Mission from "../components/Mission";
 import Coverage from "../components/Coverage";
 import Testimonials from "../components/Testimonials";
-import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -17,9 +16,8 @@ export default function Home() {
         <Services />
         <Mission />
         <Coverage />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Testimonials />
-          <Gallery />
         </div>
         <Contact />
       </div>
