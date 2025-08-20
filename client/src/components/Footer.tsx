@@ -21,7 +21,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4" data-testid="footer-contact-title">Contacto</h4>
             <ul className="space-y-2 text-gray-400">
-              <li data-testid="footer-phone">+506 1234 5678</li>
+              <li data-testid="footer-phone-1">+506 6109-0825</li>
+              <li data-testid="footer-phone-2">+506 8831-2010</li>
               <li data-testid="footer-availability">24/7 Disponible</li>
               <li data-testid="footer-location">Costa Rica</li>
             </ul>

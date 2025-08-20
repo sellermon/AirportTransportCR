@@ -21,7 +21,7 @@ export default function Contact() {
   ];
 
   const handleWhatsAppContact = () => {
-    window.open('https://wa.me/50612345678', '_blank');
+    window.open('https://wa.me/50661090825', '_blank');
   };
 
   return (
@@ -33,13 +33,22 @@ export default function Contact() {
         <div className="mb-4" data-testid="whatsapp-contact-card">
           <div className="flex items-center justify-center mb-2">
             <MessageCircle className="w-6 h-6 text-green-500 mr-2" />
-            <a 
-              href="https://wa.me/50612345678" 
-              className="text-xl font-bold text-brand-navy hover:text-green-500 transition-colors"
-              data-testid="phone-number"
-            >
-              +506 1234 5678
-            </a>
+            <div className="space-y-2">
+              <a 
+                href="https://wa.me/50661090825" 
+                className="block text-xl font-bold text-brand-navy hover:text-green-500 transition-colors"
+                data-testid="phone-number-1"
+              >
+                +506 6109-0825
+              </a>
+              <a 
+                href="https://wa.me/50688312010" 
+                className="block text-xl font-bold text-brand-navy hover:text-green-500 transition-colors"
+                data-testid="phone-number-2"
+              >
+                +506 8831-2010
+              </a>
+            </div>
           </div>
           <p className="text-brand-gray" data-testid="availability-text">
             Atendemos 24/7

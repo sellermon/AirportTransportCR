@@ -10,7 +10,7 @@ The landing page has been redesigned to match the exact layout and styling from 
 - **Services Section**: Three main services with custom icons (airport transfers, corporate transport, private tours)
 - **Geographic Coverage**: Costa Rica map visualization with location markers for San José, Alajuela, and Heredia
 - **Layout Optimization**: Testimonials and gallery positioned side-by-side for better space utilization
-- **Contact Section**: Simplified design with prominent WhatsApp number (+506 1234 5678) and 24/7 availability
+- **Contact Section**: Simplified design with prominent WhatsApp numbers (+506 6109-0825 and +506 8831-2010) and 24/7 availability
 - **Color Scheme**: Applied consistent navy blue (#1e2238), red (#d63031), and gray branding
 - **Responsive Design**: Mobile-first approach matching the single-column layout from reference image
 
