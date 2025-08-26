@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/Copilot_20250820_170312_1756233016280.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,14 @@ export default function Navigation() {
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">Airport Transport </h1>
+          <div className="flex-shrink-0 flex items-center">
+            <img 
+              src={logoImage} 
+              alt="Airport Transport CR" 
+              className="h-12 w-12 mr-3"
+              data-testid="logo-image"
+            />
+            <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">Airport Transport CR</h1>
           </div>
           
           {/* Desktop Navigation */}
