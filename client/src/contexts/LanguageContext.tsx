@@ -56,6 +56,13 @@ const translations = {
 
     // Footer
     'footer.company': 'Airport Transport CR',
+    'footer.description': 'Transporte privado y de aeropuerto confiable en Costa Rica. Servicio personalizado 24/7 con los más altos estándares de calidad y seguridad.',
+    'footer.services.airport': 'Traslados al aeropuerto',
+    'footer.services.corporate': 'Transporte corporativo',
+    'footer.services.tours': 'Tours privados',
+    'footer.contact.title': 'Contacto',
+    'footer.contact.availability': '24/7 Disponible',
+    'footer.contact.location': 'Costa Rica',
     'footer.rights': 'Todos los derechos reservados.',
   },
   en: {
@@ -105,6 +112,13 @@ const translations = {
 
     // Footer
     'footer.company': 'Airport Transport CR',
+    'footer.description': 'Reliable private and airport transportation in Costa Rica. Personalized 24/7 service with the highest standards of quality and safety.',
+    'footer.services.airport': 'Airport transfers',
+    'footer.services.corporate': 'Corporate transportation',
+    'footer.services.tours': 'Private tours',
+    'footer.contact.title': 'Contact',
+    'footer.contact.availability': '24/7 Available',
+    'footer.contact.location': 'Costa Rica',
     'footer.rights': 'All rights reserved.',
   }
 };

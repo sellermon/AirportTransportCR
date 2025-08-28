@@ -19,31 +19,30 @@ export default function Footer() {
               <h3 className="text-xl font-bold" data-testid="footer-brand">{t('footer.company')}</h3>
             </div>
             <p className="text-gray-400 mb-4" data-testid="footer-description">
-              Transporte privado y de aeropuerto confiable en Costa Rica.
-              Servicio personalizado 24/7 con los más altos estándares de calidad y seguridad.
+              {t('footer.description')}
             </p>
           </div>
           <div>
             <h4 className="font-semibold mb-4" data-testid="footer-services-title">{t('services.title')}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li data-testid="footer-service-1">Traslados al aeropuerto</li>
-              <li data-testid="footer-service-2">Transporte corporativo</li>
-              <li data-testid="footer-service-3">Tours privados</li>
+              <li data-testid="footer-service-1">{t('footer.services.airport')}</li>
+              <li data-testid="footer-service-2">{t('footer.services.corporate')}</li>
+              <li data-testid="footer-service-3">{t('footer.services.tours')}</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4" data-testid="footer-contact-title">Contacto</h4>
+            <h4 className="font-semibold mb-4" data-testid="footer-contact-title">{t('footer.contact.title')}</h4>
             <ul className="space-y-2 text-gray-400">
               <li data-testid="footer-phone-1">+506 6109-0825</li>
               <li data-testid="footer-phone-2">+506 8831-2010</li>
-              <li data-testid="footer-availability">24/7 Disponible</li>
-              <li data-testid="footer-location">Costa Rica</li>
+              <li data-testid="footer-availability">{t('footer.contact.availability')}</li>
+              <li data-testid="footer-location">{t('footer.contact.location')}</li>
             </ul>
           </div>
         </div>
         <hr className="border-gray-700 my-8" />
         <div className="text-center text-gray-400">
-          <p data-testid="footer-copyright">© 2025 CYOS. Todos los derechos reservados.</p>
+          <p data-testid="footer-copyright">© 2025 Airport Transport CR. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>
