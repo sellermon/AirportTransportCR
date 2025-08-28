@@ -1,4 +1,4 @@
-import { Target, Eye } from "lucide-react";
+import { Heart, Star } from "lucide-react";
 
 export default function Mission() {
   return (
@@ -9,7 +9,7 @@ export default function Mission() {
           <div className="text-center lg:text-left" data-testid="mission-card">
             <div className="flex items-center justify-center lg:justify-start mb-4">
               <div className="bg-brand-navy text-white w-12 h-12 rounded-full flex items-center justify-center mr-3">
-                <Target className="w-6 h-6" />
+                <Heart className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-brand-navy" data-testid="mission-title">
                 Misión
@@ -27,10 +27,10 @@ export default function Mission() {
           <div className="text-center lg:text-left" data-testid="vision-card">
             <div className="flex items-center justify-center lg:justify-start mb-4">
               <div className="bg-brand-blue text-white w-12 h-12 rounded-full flex items-center justify-center mr-3">
-                <Eye className="w-6 h-6" />
+                <Star className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-brand-navy" data-testid="vision-title">
-                🌅 Visión
+                Visión
               </h3>
             </div>
             <p className="text-brand-gray leading-relaxed" data-testid="vision-text">
