@@ -1,6 +1,9 @@
 import logoImage from "@assets/Copilot_20250820_170312_1756233016280.png";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-gray-900 text-white py-12" data-testid="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +16,7 @@ export default function Footer() {
                 className="h-14 w-14 mr-3"
                 data-testid="footer-logo-image"
               />
-              <h3 className="text-xl font-bold" data-testid="footer-brand">Airport Transport CR</h3>
+              <h3 className="text-xl font-bold" data-testid="footer-brand">{t('footer.company')}</h3>
             </div>
             <p className="text-gray-400 mb-4" data-testid="footer-description">
               Transporte privado y de aeropuerto confiable en Costa Rica.
@@ -21,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4" data-testid="footer-services-title">Servicios</h4>
+            <h4 className="font-semibold mb-4" data-testid="footer-services-title">{t('services.title')}</h4>
             <ul className="space-y-2 text-gray-400">
               <li data-testid="footer-service-1">Traslados al aeropuerto</li>
               <li data-testid="footer-service-2">Transporte corporativo</li>

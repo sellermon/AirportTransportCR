@@ -1,7 +1,9 @@
 import { Clock, Shield, Star, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
   const features = [
     {
       icon: Clock,
@@ -27,7 +29,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="py-12 bg-gray-50" data-testid="contact-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">Contacto</h2>
+        <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">{t('contact.title')}</h2>
         
         {/* WhatsApp Contact */}
         <div className="mb-6" data-testid="whatsapp-contact-card">
@@ -59,7 +61,7 @@ export default function Contact() {
               className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
               data-testid="whatsapp-book-button-1"
             >
-              📲 Reservar por WhatsApp
+              {t('contact.bookButton')}
             </a>
             <a 
               href="https://wa.me/50688312010?text=Hola%20quiero%20reservar%20transporte%20desde%20el%20aeropuerto"
@@ -67,12 +69,12 @@ export default function Contact() {
               className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
               data-testid="whatsapp-book-button-2"
             >
-              📲 Reservar (Línea 2)
+              {t('contact.bookButton2')}
             </a>
           </div>
           
           <p className="text-brand-gray" data-testid="availability-text">
-            Atendemos 24/7
+            {t('contact.availability')}
           </p>
         </div>
       </div>

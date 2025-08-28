@@ -1,10 +1,13 @@
 import { CheckCircle } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 import costaRicaMap from "@assets/generated_images/Costa_Rica_detailed_country_map_a81c6d2f.png";
 
 export default function Coverage() {
+  const { t } = useLanguage();
+  
   const provinces = [
     "San José - Capital y área metropolitana",
-    "Alajuela - Aeropuerto internacional y volcanes",
+    "Alajuela - Aeropuerto internacional y volcanes", 
     "Heredia - Montañas y cafetales",
     "Cartago - Valle Central y volcán Irazú",
     "Puntarenas - Pacífico Central y Sur",
@@ -16,7 +19,7 @@ export default function Coverage() {
     <section id="cobertura" className="py-12 bg-gray-50" data-testid="coverage-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-brand-navy mb-8" data-testid="coverage-title">
-          Cobertura geográfica
+          {t('coverage.title')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Costa Rica Map */}
@@ -48,11 +51,10 @@ export default function Coverage() {
           {/* Coverage Text */}
           <div data-testid="coverage-info">
             <h3 className="text-xl font-bold text-brand-navy mb-6" data-testid="coverage-subtitle">
-              Cobertura Nacional Completa
+              {t('coverage.subtitle')}
             </h3>
             <p className="text-brand-gray mb-6 text-base" data-testid="coverage-description">
-              Brindamos servicios de transporte en todas las provincias de Costa Rica, 
-              conectando aeropuertos, hoteles, destinos turísticos y centros urbanos a nivel nacional.
+              {t('coverage.description')}
             </p>
             <div className="grid grid-cols-1 gap-3">
               {provinces.map((province, index) => (
@@ -64,10 +66,10 @@ export default function Coverage() {
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-brand-red">
               <p className="text-sm text-brand-navy font-semibold">
-                🌟 Servicio especializado desde y hacia todos los aeropuertos del país
+                {t('coverage.airports')}
               </p>
               <p className="text-sm text-brand-gray mt-1">
-                Juan Santamaría (SJO), Daniel Oduber (LIR), Tobías Bolaños (SYQ) y Limón (LIO)
+                {t('coverage.airportList')}
               </p>
             </div>
           </div>

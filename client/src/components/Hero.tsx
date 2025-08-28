@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "../contexts/LanguageContext";
 import airportImage from "@assets/generated_images/Costa_Rica_glass_airport_terminal_212dbfab.png";
 
 export default function Hero() {
+  const { t } = useLanguage();
+  
   const handleBookingRequest = () => {
     const message = "Hola quiero reservar un Servicio de Transporte";
     const phoneNumber = "50661090825";
@@ -22,17 +25,23 @@ export default function Hero() {
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
           data-testid="hero-title"
         >
-          Servicios de Transporte Privado y de
-          <br />
-          Aeropuerto a su Destino
+          {t('hero.title').split('\n').map((line, index) => (
+            <span key={index}>
+              {line}
+              {index === 0 && <br />}
+            </span>
+          ))}
         </h1>
         <p
           className="text-lg md:text-xl lg:text-2xl mb-8 font-light"
           data-testid="hero-subtitle"
         >
-          Viaja cómodo, seguro y puntual. Servicio
-          <br />
-          personalizado 24/7
+          {t('hero.subtitle').split('\n').map((line, index) => (
+            <span key={index}>
+              {line}
+              {index === 0 && <br />}
+            </span>
+          ))}
         </p>
         <Button
           onClick={handleBookingRequest}
@@ -40,7 +49,7 @@ export default function Hero() {
           size="lg"
           data-testid="button-booking-request"
         >
-          📲 Reservar por WhatsApp
+          {t('hero.bookButton')}
         </Button>
       </div>
     </section>

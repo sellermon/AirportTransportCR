@@ -1,8 +1,12 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export default function Testimonials() {
+  const { t } = useLanguage();
+  
   return (
     <div id="testimonios" data-testid="testimonials-section">
       <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6 md:mb-8" data-testid="testimonials-title">
-        Testimonios
+        {t('testimonials.title')}
       </h2>
       <div className="relative">
         {/* Quotation mark */}

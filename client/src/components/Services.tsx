@@ -1,21 +1,24 @@
 import { Car, Briefcase, MapPin } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Services() {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Car,
-      title: "Traslados al\naeropuerto",
-      description: "Servicio nacional desde y hacia TODOS los aeropuertos: Juan Santamaría (SJO), Daniel Oduber (LIR), Tobías Bolaños (SYQ) y Limón (LIO)."
+      title: "services.airport.title",
+      description: "services.airport.desc"
     },
     {
       icon: Briefcase,
-      title: "Transporte\ncorporativo",
-      description: "Servicio ejecutivo a nivel nacional para empresas, reuniones de negocios y eventos corporativos en todas las provincias."
+      title: "services.corporate.title",
+      description: "services.corporate.desc"
     },
     {
       icon: MapPin,
-      title: "Tours\nprivados",
-      description: "Tours nacionales personalizados: desde playas del Pacífico y Caribe hasta volcanes, parques nacionales y ciudades."
+      title: "services.tours.title",
+      description: "services.tours.desc"
     }
   ];
 
@@ -23,7 +26,7 @@ export default function Services() {
     <section id="servicios" className="py-12 bg-gray-50" data-testid="services-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-brand-navy mb-8" data-testid="services-title">
-          Servicios
+          {t('services.title')}
         </h2>
         <div className="grid grid-cols-3 gap-8">
           {services.map((service, index) => {
@@ -34,13 +37,16 @@ export default function Services() {
                   <IconComponent className="w-7 h-7" />
                 </div>
                 <h3 className="text-base font-bold text-brand-navy leading-tight" data-testid={`service-title-${index}`}>
-                  {service.title.split('\n').map((line, lineIndex) => (
+                  {t(service.title).split('\n').map((line, lineIndex) => (
                     <span key={lineIndex}>
                       {line}
-                      {lineIndex < service.title.split('\n').length - 1 && <br />}
+                      {lineIndex < t(service.title).split('\n').length - 1 && <br />}
                     </span>
                   ))}
                 </h3>
+                <p className="text-sm text-brand-gray mt-2 px-4" data-testid={`service-desc-${index}`}>
+                  {t(service.description)}
+                </p>
               </div>
             );
           })}
