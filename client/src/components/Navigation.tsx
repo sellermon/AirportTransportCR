@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 import logoImage from "@assets/Copilot_20250820_170312_1756233016280.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -11,6 +13,10 @@ export default function Navigation() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false);
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'es' ? 'en' : 'es');
   };
 
   return (
@@ -35,28 +41,37 @@ export default function Navigation() {
                 className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
                 data-testid="nav-servicios"
               >
-                Servicios
+                {t('nav.services')}
               </button>
               <button
                 onClick={() => scrollToSection('cobertura')}
                 className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
                 data-testid="nav-cobertura"
               >
-                Cobertura
+                {t('nav.coverage')}
               </button>
               <button
                 onClick={() => scrollToSection('testimonios')}
                 className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
                 data-testid="nav-testimonios"
               >
-                Testimonios
+                {t('nav.testimonials')}
               </button>
               <button
                 onClick={() => scrollToSection('contacto')}
                 className="text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors"
                 data-testid="nav-contacto"
               >
-                Contacto
+                {t('nav.contact')}
+              </button>
+              {/* Language Selector */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center text-brand-gray hover:text-brand-navy px-3 py-2 text-sm font-medium transition-colors border border-gray-300 rounded-md"
+                data-testid="language-selector"
+              >
+                <Globe className="w-4 h-4 mr-2" />
+                {t('nav.changeLanguage')}
               </button>
             </div>
           </div>
@@ -82,28 +97,37 @@ export default function Navigation() {
                 className="block text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left"
                 data-testid="mobile-nav-servicios"
               >
-                Servicios
+                {t('nav.services')}
               </button>
               <button
                 onClick={() => scrollToSection('cobertura')}
                 className="block text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left"
                 data-testid="mobile-nav-cobertura"
               >
-                Cobertura
+                {t('nav.coverage')}
               </button>
               <button
                 onClick={() => scrollToSection('testimonios')}
                 className="block text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left"
                 data-testid="mobile-nav-testimonios"
               >
-                Testimonios
+                {t('nav.testimonials')}
               </button>
               <button
                 onClick={() => scrollToSection('contacto')}
                 className="block text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left"
                 data-testid="mobile-nav-contacto"
               >
-                Contacto
+                {t('nav.contact')}
+              </button>
+              {/* Mobile Language Selector */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center text-brand-gray hover:text-brand-navy px-3 py-2 text-base font-medium w-full text-left border border-gray-300 rounded-md mx-3 mt-2"
+                data-testid="mobile-language-selector"
+              >
+                <Globe className="w-4 h-4 mr-2" />
+                {t('nav.mobileChangeLanguage')}
               </button>
             </div>
           </div>
