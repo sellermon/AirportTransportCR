@@ -15,6 +15,8 @@ The landing page has been redesigned to match the exact layout and styling from 
 - **Navigation**: Streamlined menu removing gallery section, updated with new logo and branding
 - **Color Scheme**: Applied consistent navy blue (#1e2238), red (#d63031), and gray branding
 - **Responsive Design**: Mobile-first approach with clean, professional layout
+- **WhatsApp Integration**: Added comprehensive booking functionality with floating button, hero CTA, and contact section buttons
+- **National Coverage**: Extended service coverage to all seven provinces of Costa Rica with complete airport coverage (SJO, LIR, SYQ, LIO)
 
 # User Preferences
 

@@ -30,9 +30,9 @@ export default function Hero() {
           className="text-lg md:text-xl lg:text-2xl mb-8 font-light"
           data-testid="hero-subtitle"
         >
-          Viaja cómodo, seguro y puntual. Servicio
+          Cobertura nacional completa. Viaja cómodo,
           <br />
-          personalizado 24/7
+          seguro y puntual por todo Costa Rica 24/7
         </p>
         <Button
           onClick={handleBookingRequest}

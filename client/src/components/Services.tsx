@@ -5,17 +5,17 @@ export default function Services() {
     {
       icon: Car,
       title: "Traslados al\naeropuerto",
-      description: "Servicio puntual y confiable desde y hacia el aeropuerto internacional Juan Santamaría y otros aeropuertos."
+      description: "Servicio nacional desde y hacia TODOS los aeropuertos: Juan Santamaría (SJO), Daniel Oduber (LIR), Tobías Bolaños (SYQ) y Limón (LIO)."
     },
     {
       icon: Briefcase,
       title: "Transporte\ncorporativo",
-      description: "Soluciones de transporte profesional para empresas, reuniones de negocios y eventos corporativos."
+      description: "Servicio ejecutivo a nivel nacional para empresas, reuniones de negocios y eventos corporativos en todas las provincias."
     },
     {
       icon: MapPin,
       title: "Tours\nprivados",
-      description: "Descubre Costa Rica con nuestros tours personalizados y guías profesionales en vehículos cómodos."
+      description: "Tours nacionales personalizados: desde playas del Pacífico y Caribe hasta volcanes, parques nacionales y ciudades."
     }
   ];
 
