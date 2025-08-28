@@ -3,10 +3,10 @@ import airportImage from "@assets/generated_images/Costa_Rica_glass_airport_term
 
 export default function Hero() {
   const handleBookingRequest = () => {
-    const contactSection = document.getElementById('contacto');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    const message = "Hola quiero reservar transporte desde el aeropuerto";
+    const phoneNumber = "50661090825";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
   };
 
   return (
@@ -32,7 +32,7 @@ export default function Hero() {
           size="lg"
           data-testid="button-booking-request"
         >
-          Solicita tu traslado
+          📲 Reservar por WhatsApp
         </Button>
       </div>
     </section>

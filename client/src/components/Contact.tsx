@@ -30,8 +30,8 @@ export default function Contact() {
         <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">Contacto</h2>
         
         {/* WhatsApp Contact */}
-        <div className="mb-4" data-testid="whatsapp-contact-card">
-          <div className="flex items-center justify-center mb-2">
+        <div className="mb-6" data-testid="whatsapp-contact-card">
+          <div className="flex items-center justify-center mb-4">
             <MessageCircle className="w-6 h-6 text-green-500 mr-2" />
             <div className="space-y-2">
               <a 
@@ -50,6 +50,27 @@ export default function Contact() {
               </a>
             </div>
           </div>
+          
+          {/* WhatsApp Booking Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
+            <a 
+              href="https://wa.me/50661090825?text=Hola%20quiero%20reservar%20transporte%20desde%20el%20aeropuerto"
+              target="_blank"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
+              data-testid="whatsapp-book-button-1"
+            >
+              📲 Reservar por WhatsApp
+            </a>
+            <a 
+              href="https://wa.me/50688312010?text=Hola%20quiero%20reservar%20transporte%20desde%20el%20aeropuerto"
+              target="_blank"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
+              data-testid="whatsapp-book-button-2"
+            >
+              📲 Reservar (Línea 2)
+            </a>
+          </div>
+          
           <p className="text-brand-gray" data-testid="availability-text">
             Atendemos 24/7
           </p>
