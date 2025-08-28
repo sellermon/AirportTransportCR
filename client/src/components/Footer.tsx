@@ -10,7 +10,7 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="Airport Transport CR" 
-                className="h-10 w-10 mr-3"
+                className="h-14 w-14 mr-3"
                 data-testid="footer-logo-image"
               />
               <h3 className="text-xl font-bold" data-testid="footer-brand">Airport Transport CR</h3>
