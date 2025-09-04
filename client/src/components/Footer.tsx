@@ -17,7 +17,7 @@ export default function Footer() {
                 data-testid="footer-logo-image"
               />
             </div>
-            <p className="text-gray-400 mb-4" data-testid="footer-description">
+            <p className="text-gray-400 mt-[-28px] mb-[-28px]" data-testid="footer-description">
               {t('footer.description').split('\n').map((line, index) => (
                 <span key={index}>
                   {line}
