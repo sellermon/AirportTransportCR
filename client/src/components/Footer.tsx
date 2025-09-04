@@ -13,7 +13,7 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="GoCR Transport" 
-                className="h-60 w-60"
+                className="h-48 w-auto max-w-60"
                 data-testid="footer-logo-image"
               />
             </div>
