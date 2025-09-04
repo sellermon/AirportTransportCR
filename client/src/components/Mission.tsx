@@ -1,11 +1,23 @@
 import { Heart, Star } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
+import watermarkBg from "@assets/fondo_1757026523220.png";
 
 export default function Mission() {
   const { t } = useLanguage();
   
   return (
-    <section id="mision-vision" className="py-12 bg-white" data-testid="mission-section">
+    <section 
+      id="mision-vision" 
+      className="py-12 bg-white relative" 
+      style={{
+        backgroundImage: `url(${watermarkBg})`,
+        backgroundSize: '400px 400px',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed'
+      }}
+      data-testid="mission-section"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Mission */}

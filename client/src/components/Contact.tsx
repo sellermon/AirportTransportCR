@@ -1,6 +1,7 @@
 import { Clock, Shield, Star, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
+import watermarkBg from "@assets/fondo_1757026523220.png";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -27,7 +28,18 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-12 bg-gray-50" data-testid="contact-section">
+    <section 
+      id="contacto" 
+      className="py-12 bg-gray-50 relative" 
+      style={{
+        backgroundImage: `url(${watermarkBg})`,
+        backgroundSize: '350px 350px',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed'
+      }}
+      data-testid="contact-section"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">{t('contact.title')}</h2>
         
