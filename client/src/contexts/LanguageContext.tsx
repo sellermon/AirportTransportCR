@@ -50,6 +50,7 @@ const translations = {
     'contact.availability': 'Atendemos 24/7',
     'contact.bookButton': '📲 Reservar por WhatsApp',
     'contact.bookButton2': '📲 Reservar (Línea 2)',
+    'contact.emailButton': '📧 Contactar por Email',
 
     // Testimonials
     'testimonials.title': 'Testimonios',
@@ -106,6 +107,7 @@ const translations = {
     'contact.availability': 'We serve 24/7',
     'contact.bookButton': '📲 Book via WhatsApp',
     'contact.bookButton2': '📲 Book (Line 2)',
+    'contact.emailButton': '📧 Contact via Email',
 
     // Testimonials
     'testimonials.title': 'Testimonials',

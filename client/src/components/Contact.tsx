@@ -1,4 +1,4 @@
-import { Clock, Shield, Star, MessageCircle } from "lucide-react";
+import { Clock, Shield, Star, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -76,6 +76,33 @@ export default function Contact() {
           <p className="text-brand-gray" data-testid="availability-text">
             {t('contact.availability')}
           </p>
+        </div>
+
+        {/* Email Contact */}
+        <div className="mb-6" data-testid="email-contact-card">
+          <div className="flex items-center justify-center mb-4">
+            <Mail className="w-6 h-6 text-blue-500 mr-2" />
+            <div className="space-y-2">
+              <a 
+                href="mailto:info@gocrtransport.com"
+                className="block text-xl font-bold text-brand-navy hover:text-blue-500 transition-colors"
+                data-testid="email-address"
+              >
+                info@gocrtransport.com
+              </a>
+            </div>
+          </div>
+          
+          {/* Email Contact Button */}
+          <div className="flex justify-center mb-4">
+            <a 
+              href="mailto:info@gocrtransport.com?subject=Solicitud%20de%20Transporte%20-%20GoCR%20Transport&body=Hola%2C%20me%20interesa%20contratar%20sus%20servicios%20de%20transporte.%20Por%20favor%20cont%C3%A1ctenme%20para%20m%C3%A1s%20informaci%C3%B3n."
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
+              data-testid="email-contact-button"
+            >
+              {t('contact.emailButton')}
+            </a>
+          </div>
         </div>
       </div>
     </section>
