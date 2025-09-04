@@ -30,7 +30,12 @@ export default function Navigation() {
               className="h-20 w-20 mr-3"
               data-testid="logo-image"
             />
-            <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">GoCR Transport</h1>
+            <h1 className="text-2xl font-bold" data-testid="logo">
+              <span className="text-red-600">Go</span>
+              <span className="text-blue-600">CR</span>
+              <br />
+              <span className="text-blue-700 text-lg tracking-wider">TRANSPORT</span>
+            </h1>
           </div>
           
           {/* Desktop Navigation */}
