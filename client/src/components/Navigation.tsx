@@ -27,7 +27,7 @@ export default function Navigation() {
             <img 
               src={logoImage} 
               alt="GoCR Transport" 
-              className="h-16 w-auto max-w-20 mr-3"
+              className="h-20 w-auto max-w-28 mr-3"
               data-testid="logo-image"
             />
             <h1 className="text-2xl font-bold" data-testid="logo">
