@@ -13,10 +13,9 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="GoCR Transport" 
-                className="h-18 w-18 mr-3"
+                className="h-18 w-18"
                 data-testid="footer-logo-image"
               />
-              <h3 className="text-xl font-bold" data-testid="footer-brand">{t('footer.company')}</h3>
             </div>
             <p className="text-gray-400 mb-4" data-testid="footer-description">
               {t('footer.description')}
