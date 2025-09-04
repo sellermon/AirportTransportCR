@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <img 
                 src={logoImage} 
-                alt="Airport Transport CR" 
+                alt="GoCR Transport" 
                 className="h-14 w-14 mr-3"
                 data-testid="footer-logo-image"
               />
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
         <hr className="border-gray-700 my-8" />
         <div className="text-center text-gray-400">
-          <p data-testid="footer-copyright">© 2025 Airport Transport CR. {t('footer.rights')}</p>
+          <p data-testid="footer-copyright">© 2025 GoCR Transport. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

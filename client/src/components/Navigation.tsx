@@ -26,11 +26,11 @@ export default function Navigation() {
           <div className="flex-shrink-0 flex items-center">
             <img 
               src={logoImage} 
-              alt="Airport Transport CR" 
+              alt="GoCR Transport" 
               className="h-16 w-16 mr-3"
               data-testid="logo-image"
             />
-            <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">Airport Transport CR</h1>
+            <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">GoCR Transport</h1>
           </div>
           
           {/* Desktop Navigation */}
