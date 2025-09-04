@@ -19,7 +19,7 @@ const translations = {
     'nav.mobileChangeLanguage': 'Cambiar a English',
 
     // Hero
-    'hero.title': 'Servicios de Transporte Privado y de\nAeropuerto a su Destino',
+    'hero.title': 'Su Destino, Nuestra Prioridad:\nTransporte Privado de Calidad',
     'hero.subtitle': 'Cobertura nacional completa. Viaja cómodo,\nseguro y puntual por todo Costa Rica 24/7',
     'hero.bookButton': '📲 Reservar por WhatsApp',
 
@@ -75,7 +75,7 @@ const translations = {
     'nav.mobileChangeLanguage': 'Switch to Español',
 
     // Hero
-    'hero.title': 'Private Transportation and\nAirport Services to Your Destination',
+    'hero.title': 'Your Destination, Our Priority:\nQuality Private Transportation',
     'hero.subtitle': 'Complete national coverage. Travel comfortably,\nsafely and punctually throughout Costa Rica 24/7',
     'hero.bookButton': '📲 Book via WhatsApp',
 
