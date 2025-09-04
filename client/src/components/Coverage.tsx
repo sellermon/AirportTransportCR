@@ -32,19 +32,19 @@ export default function Coverage() {
               />
               {/* Location markers for all Costa Rica provinces */}
               {/* San José - Central Valley, center of the country */}
-              <div className="absolute top-[45%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
+              <div className="absolute top-[50%] left-[50%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
               {/* Alajuela - Northwest of San José, near the airport */}
-              <div className="absolute top-[40%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
+              <div className="absolute top-[45%] left-[47%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
               {/* Heredia - North of San José */}
-              <div className="absolute top-[38%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
+              <div className="absolute top-[42%] left-[50%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
               {/* Cartago - Southeast of San José */}
-              <div className="absolute top-[48%] left-[52%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-cartago" title="Cartago"></div>
-              {/* Puntarenas - Pacific Coast, west side */}
-              <div className="absolute top-[55%] left-[30%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
-              {/* Guanacaste - Northwest Pacific coast */}
-              <div className="absolute top-[25%] left-[40%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
-              {/* Limón - Caribbean coast, east side */}
-              <div className="absolute top-[45%] left-[70%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
+              <div className="absolute top-[55%] left-[55%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-cartago" title="Cartago"></div>
+              {/* Puntarenas - Pacific Coast, central-west */}
+              <div className="absolute top-[60%] left-[35%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
+              {/* Guanacaste - Northwest province */}
+              <div className="absolute top-[30%] left-[42%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
+              {/* Limón - Caribbean province, east coast */}
+              <div className="absolute top-[50%] left-[65%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
             </div>
           </div>
 
