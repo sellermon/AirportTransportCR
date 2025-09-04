@@ -57,7 +57,7 @@ const translations = {
 
     // Footer
     'footer.company': 'GoCR Transport',
-    'footer.description': 'Transporte privado y de aeropuerto confiable en Costa Rica. Servicio personalizado 24/7 con los más altos estándares de calidad y seguridad.',
+    'footer.description': 'Su Destino, Nuestra Prioridad\nTransporte Privado de Calidad',
     'footer.services.airport': 'Traslados al aeropuerto',
     'footer.services.corporate': 'Transporte corporativo',
     'footer.services.tours': 'Tours privados',
@@ -114,7 +114,7 @@ const translations = {
 
     // Footer
     'footer.company': 'GoCR Transport',
-    'footer.description': 'Reliable private and airport transportation in Costa Rica. Personalized 24/7 service with the highest standards of quality and safety.',
+    'footer.description': 'Your Destination, Our Priority\nQuality Private Transportation',
     'footer.services.airport': 'Airport transfers',
     'footer.services.corporate': 'Corporate transportation',
     'footer.services.tours': 'Private tours',

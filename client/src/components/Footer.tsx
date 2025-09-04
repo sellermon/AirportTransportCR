@@ -13,12 +13,17 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="GoCR Transport" 
-                className="h-12 w-12"
+                className="h-60 w-60"
                 data-testid="footer-logo-image"
               />
             </div>
             <p className="text-gray-400 mb-4" data-testid="footer-description">
-              {t('footer.description')}
+              {t('footer.description').split('\n').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  {index === 0 && <br />}
+                </span>
+              ))}
             </p>
           </div>
           <div>
