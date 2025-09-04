@@ -40,11 +40,11 @@ export default function Coverage() {
               {/* Cartago - Southeast of San José */}
               <div className="absolute top-[48%] left-[52%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-cartago" title="Cartago"></div>
               {/* Puntarenas - Pacific Coast, west side */}
-              <div className="absolute top-[55%] left-[25%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
+              <div className="absolute top-[55%] left-[30%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
               {/* Guanacaste - Northwest Pacific coast */}
-              <div className="absolute top-[25%] left-[35%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
+              <div className="absolute top-[25%] left-[40%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
               {/* Limón - Caribbean coast, east side */}
-              <div className="absolute top-[45%] left-[75%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
+              <div className="absolute top-[45%] left-[70%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
             </div>
           </div>
 
