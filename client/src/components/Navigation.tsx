@@ -22,12 +22,12 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0 flex items-center">
             <img 
               src={logoImage} 
               alt="GoCR Transport" 
-              className="h-16 w-16 mr-3"
+              className="h-20 w-20 mr-3"
               data-testid="logo-image"
             />
             <h1 className="text-xl font-bold text-brand-navy" data-testid="logo">GoCR Transport</h1>
