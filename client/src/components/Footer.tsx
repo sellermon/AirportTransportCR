@@ -1,4 +1,4 @@
-import logoImage from "@assets/Copilot_20250820_170312_1756233016280.png";
+import logoImage from "@assets/logo oficial_1757026020182.png";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Footer() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
-import logoImage from "@assets/Copilot_20250820_170312_1756233016280.png";
+import logoImage from "@assets/logo oficial_1757026020182.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
