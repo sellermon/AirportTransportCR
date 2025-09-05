@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
-import costaRicaMap from "@assets/generated_images/Costa_Rica_detailed_country_map_a81c6d2f.png";
+import costaRicaMap from "@assets/costa-rica-map.png";
 
 export default function Coverage() {
   const { t } = useLanguage();
