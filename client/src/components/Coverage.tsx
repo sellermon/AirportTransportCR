@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
-import costaRicaMap from "@assets/generated_images/Costa_Rica_detailed_country_map_a81c6d2f.png";
+import costaRicaMap from "@assets/Screenshot 2025-09-05 at 11.52.42 AM_1757094778013.png";
 
 export default function Coverage() {
   const { t } = useLanguage();
@@ -31,20 +31,20 @@ export default function Coverage() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Location markers for all Costa Rica provinces */}
-              {/* San José - Central Valley, center of the country */}
-              <div className="absolute top-[55%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
-              {/* Alajuela - Northwest of San José, near the airport */}
-              <div className="absolute top-[50%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
-              {/* Heredia - North of San José */}
-              <div className="absolute top-[48%] left-[48%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
-              {/* Cartago - Southeast of San José */}
-              <div className="absolute top-[58%] left-[52%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-cartago" title="Cartago"></div>
-              {/* Puntarenas - Pacific Coast, central-west */}
-              <div className="absolute top-[65%] left-[40%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
-              {/* Guanacaste - Northwest province */}
-              <div className="absolute top-[35%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
-              {/* Limón - Caribbean province, east coast */}
-              <div className="absolute top-[55%] left-[60%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
+              {/* San José - Purple province in center-south */}
+              <div className="absolute top-[62%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-san-jose" title="San José"></div>
+              {/* Alajuela - Red province in center-north */}
+              <div className="absolute top-[35%] left-[42%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-alajuela" title="Alajuela"></div>
+              {/* Heredia - Yellow province in center-east */}
+              <div className="absolute top-[38%] left-[52%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-heredia" title="Heredia"></div>
+              {/* Cartago - Blue province in center-east */}
+              <div className="absolute top-[52%] left-[58%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-cartago" title="Cartago"></div>
+              {/* Puntarenas - Orange province in south */}
+              <div className="absolute top-[75%] left-[45%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-puntarenas" title="Puntarenas"></div>
+              {/* Guanacaste - Green province in northwest */}
+              <div className="absolute top-[45%] left-[25%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-guanacaste" title="Guanacaste"></div>
+              {/* Limón - Turquoise province on Caribbean coast */}
+              <div className="absolute top-[45%] left-[68%] w-3 h-3 bg-brand-red rounded-full border-2 border-white shadow-md" data-testid="location-marker-limon" title="Limón"></div>
             </div>
           </div>
 
