@@ -124,7 +124,7 @@ export default function Contact() {
             <SiInstagram className="w-6 h-6 text-pink-500 mr-2" />
             <div className="space-y-2">
               <a 
-                href="https://instagram.com/gocrtransport"
+                href="https://www.instagram.com/gocr_transport"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-xl font-bold text-brand-navy hover:text-pink-500 transition-colors"
@@ -136,7 +136,7 @@ export default function Contact() {
           {/* Instagram Button */}
           <div className="flex justify-center mb-4">
             <a 
-              href="https://instagram.com/gocrtransport"
+              href="https://www.instagram.com/gocr_transport"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg"
