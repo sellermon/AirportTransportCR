@@ -1,7 +1,9 @@
 import { Clock, Shield, Star, MessageCircle, Mail } from "lucide-react";
+import { SiInstagram } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 import watermarkBg from "@assets/fondo_1757026523220.png";
+import instagramQR from "@assets/QR gocrtransport_1757814127746.jpeg";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -115,6 +117,50 @@ export default function Contact() {
               {t('contact.emailButton')}
             </a>
           </div>
+        </div>
+
+        {/* Instagram Contact */}
+        <div className="mb-6" data-testid="instagram-contact-card">
+          <div className="flex items-center justify-center mb-4">
+            <SiInstagram className="w-6 h-6 text-pink-500 mr-2" />
+            <div className="space-y-2">
+              <a 
+                href="https://instagram.com/gocrtransport"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-xl font-bold text-brand-navy hover:text-pink-500 transition-colors"
+                data-testid="instagram-handle"
+              >
+                @gocrtransport
+              </a>
+            </div>
+          </div>
+          
+          {/* Instagram QR Code and Button */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4">
+            <div className="flex flex-col items-center">
+              <img 
+                src={instagramQR} 
+                alt="Código QR de Instagram @gocrtransport"
+                className="w-24 h-24 rounded-lg shadow-md border-2 border-pink-200"
+                data-testid="instagram-qr-code"
+              />
+              <p className="text-sm text-brand-gray mt-2">Escanea el código QR</p>
+            </div>
+            <a 
+              href="https://instagram.com/gocrtransport"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              data-testid="instagram-contact-button"
+            >
+              {t('contact.instagramButton')}
+            </a>
+          </div>
+          
+          <p className="text-brand-gray text-sm" data-testid="instagram-description">
+            {t('contact.instagramDescription')}
+          </p>
         </div>
       </div>
     </section>

@@ -51,6 +51,8 @@ const translations = {
     'contact.bookButton': '📲 Reservar por WhatsApp',
     'contact.bookButton2': '📲 Reservar (Línea 2)',
     'contact.emailButton': '📧 Contactar por Email',
+    'contact.instagramButton': '📸 Síguenos en Instagram',
+    'contact.instagramDescription': 'Síguenos en Instagram para ver nuestros servicios y destinos en Costa Rica',
 
     // Testimonials
     'testimonials.title': 'Testimonios',
@@ -108,6 +110,8 @@ const translations = {
     'contact.bookButton': '📲 Book via WhatsApp',
     'contact.bookButton2': '📲 Book (Line 2)',
     'contact.emailButton': '📧 Contact via Email',
+    'contact.instagramButton': '📸 Follow us on Instagram',
+    'contact.instagramDescription': 'Follow us on Instagram to see our services and destinations in Costa Rica',
 
     // Testimonials
     'testimonials.title': 'Testimonials',
