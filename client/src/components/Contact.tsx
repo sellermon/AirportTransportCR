@@ -44,6 +44,35 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">{t('contact.title')}</h2>
         
+        {/* Instagram Contact - Top */}
+        <div className="mb-6" data-testid="instagram-contact-card-top">
+          <div className="flex items-center justify-center mb-4">
+            <SiInstagram className="w-6 h-6 text-pink-500 mr-2" />
+            <div className="space-y-2">
+              <a 
+                href="https://www.instagram.com/gocr_transport"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-xl font-bold text-brand-navy hover:text-pink-500 transition-colors"
+                data-testid="instagram-handle-top"
+              >@gocr_transport</a>
+            </div>
+          </div>
+          
+          {/* Instagram Button */}
+          <div className="flex justify-center mb-4">
+            <a 
+              href="https://www.instagram.com/gocr_transport"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg"
+              data-testid="instagram-contact-button-top"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+
         {/* WhatsApp Contact */}
         <div className="mb-6" data-testid="whatsapp-contact-card">
           <div className="flex items-center justify-center mb-4">
