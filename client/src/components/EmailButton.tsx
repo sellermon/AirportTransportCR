@@ -15,7 +15,7 @@ export default function EmailButton() {
   return (
     <button
       onClick={handleEmailClick}
-      className="fixed bottom-24 right-6 bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50"
+      className="fixed bottom-20 right-6 bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50"
       data-testid="email-float-button"
       title={t('contact.emailButton')}
     >
