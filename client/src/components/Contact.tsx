@@ -44,6 +44,35 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold text-brand-navy mb-8" data-testid="contact-title">{t('contact.title')}</h2>
         
+        {/* Instagram Contact */}
+        <div className="mb-6" data-testid="instagram-contact-card">
+          <div className="flex items-center justify-center mb-4">
+            <SiInstagram className="w-6 h-6 text-pink-500 mr-2" />
+            <div className="space-y-2">
+              <a 
+                href="https://www.instagram.com/gocr_transport"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-xl font-bold text-brand-navy hover:text-pink-500 transition-colors"
+                data-testid="instagram-handle"
+              >@gocr_transport</a>
+            </div>
+          </div>
+          
+          {/* Instagram Button */}
+          <div className="flex justify-center mb-4">
+            <a 
+              href="https://www.instagram.com/gocr_transport"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg"
+              data-testid="instagram-contact-button"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+
         {/* WhatsApp Contact */}
         <div className="mb-6" data-testid="whatsapp-contact-card">
           <div className="flex items-center justify-center mb-4">
@@ -97,11 +126,11 @@ export default function Contact() {
             <Mail className="w-6 h-6 text-blue-500 mr-2" />
             <div className="space-y-2">
               <a 
-                href="mailto:info@gocrtransport.com"
+                href="mailto:seller.reyes@gmail.com"
                 className="block text-xl font-bold text-brand-navy hover:text-blue-500 transition-colors"
                 data-testid="email-address"
               >
-                info@gocrtransport.com
+                seller.reyes@gmail.com
               </a>
             </div>
           </div>
@@ -109,7 +138,7 @@ export default function Contact() {
           {/* Email Contact Button */}
           <div className="flex justify-center mb-4">
             <a 
-              href="mailto:info@gocrtransport.com?subject=Solicitud%20de%20Transporte%20-%20GoCR%20Transport&body=Hola%2C%20me%20interesa%20contratar%20sus%20servicios%20de%20transporte.%20Por%20favor%20cont%C3%A1ctenme%20para%20m%C3%A1s%20informaci%C3%B3n."
+              href="mailto:seller.reyes@gmail.com?subject=Solicitud%20de%20Transporte%20-%20GoCR%20Transport&body=Hola%2C%20me%20interesa%20contratar%20sus%20servicios%20de%20transporte.%20Por%20favor%20cont%C3%A1ctenme%20para%20m%C3%A1s%20informaci%C3%B3n."
               className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors shadow-lg"
               data-testid="email-contact-button"
             >
