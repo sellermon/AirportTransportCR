@@ -130,9 +130,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="block text-xl font-bold text-brand-navy hover:text-pink-500 transition-colors"
                 data-testid="instagram-handle"
-              >
-                @gocrtransport
-              </a>
+              >@gocr_transport</a>
             </div>
           </div>
           
