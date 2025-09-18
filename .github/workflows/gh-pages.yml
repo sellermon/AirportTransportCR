@@ -51,6 +51,9 @@ jobs:
         if: steps.check-domain.outputs.has_custom_domain == 'true'
         run: cp CNAME dist/public/
 
+      - name: Create .nojekyll file
+        run: touch dist/public/.nojekyll
+
       - name: Create 404.html for SPA routing
         run: cp dist/public/index.html dist/public/404.html
 
